@@ -1,0 +1,27 @@
+package Daily;
+
+public class Find_Smallest_Letter_Greater_Than_Target_744 {
+    class Solution {
+        public char nextGreatestLetter(char[] letters, char target) {
+            char res = letters[0];
+            boolean flag = false;
+
+            for(char ch : letters){
+                if(!flag){
+                    if(ch > target){
+                        res = ch;
+                        flag = !flag;
+                    }
+                } else {
+                    if(ch > target && ch < res)res = ch;
+                }
+            }
+
+            return res;
+        }
+    }
+
+    public static void main(String[] args) {
+
+    }
+}
