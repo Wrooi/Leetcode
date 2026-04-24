@@ -1,0 +1,21 @@
+package Daily;
+
+public class Furthest_Point_From_Origin_2833 {
+    class Solution {
+        public int furthestDistanceFromOrigin(String moves) {
+            int left = 0, right = 0, blanks = 0;
+
+            for (char c : moves.toCharArray()) {
+                if (c == 'L') left++;
+                else if (c == 'R') right++;
+                else blanks++;
+            }
+
+            return Math.abs(left - right) + blanks;
+        }
+    }
+
+    public static void main(String[] args) {
+
+    }
+}
