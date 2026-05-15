@@ -1,0 +1,23 @@
+package Daily;
+
+public class Find_Minimum_in_Rotated_Sorted_Array_153 {
+    class Solution {
+        public int findMin(int[] nums) {
+            int n = nums.length - 1;
+            int last = nums[n];
+            int left = 0, right = n;
+
+            while (left < right) {
+                int mid = (left + right) >> 1;
+                if (nums[mid] > last) left = mid + 1;
+                else right = mid;
+            }
+
+            return nums[left];
+        }
+    }
+
+    public static void main(String[] args) {
+
+    }
+}
