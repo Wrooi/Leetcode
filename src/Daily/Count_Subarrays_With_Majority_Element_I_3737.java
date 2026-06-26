@@ -26,4 +26,8 @@ public class Count_Subarrays_With_Majority_Element_I_3737 {
         }
     }
 
+    public static void main(String[] args) {
+
+    }
+
 }
