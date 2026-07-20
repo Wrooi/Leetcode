@@ -1,4 +1,5 @@
 package Daily;
+import java.util.*;
 
 public class Sequential_Digits_1291 {
     class Solution {
