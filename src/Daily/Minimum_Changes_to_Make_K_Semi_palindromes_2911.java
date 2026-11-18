@@ -1,5 +1,6 @@
 package Daily;
 import java.util.*;
+import java.util.stream.IntStream;
 
 public class Minimum_Changes_to_Make_K_Semi_palindromes_2911 {
     class Solution {
